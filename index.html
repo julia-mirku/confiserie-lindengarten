@@ -123,7 +123,6 @@ nav.menue a{text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px
 /* Etagere */
 .etagere{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
 .etBild{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 24px 48px -26px rgba(67,48,42,.55);max-width:440px;width:100%;justify-self:center}
-#tPreis{white-space:nowrap}
 .etBild .zone{position:absolute;left:0;right:0;background:rgba(246,214,188,.0);transition:background .3s,box-shadow .3s;pointer-events:none}
 .etBild .zone.an{background:rgba(255,253,248,.0);box-shadow:inset 0 0 0 3px var(--aprikose),inset 0 0 60px rgba(227,154,100,.35)}
 .etagen{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
@@ -184,7 +183,7 @@ nav.menue a{text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px
 @media (hover:hover){.hausbild:hover img{transform:scale(1.04)}}
 .hausbild small{position:absolute;left:14px;bottom:14px;background:rgba(255,253,248,.95);border-radius:8px;padding:6px 10px;font-size:13.5px}
 
-footer{padding:30px 0 84px;font-size:14px;color:var(--kakao2)}
+footer{padding:30px 0 40px;font-size:14px;color:var(--kakao2)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;align-items:center}
 
 .ein{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
@@ -251,7 +250,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
     <div>
       <div class="ueber">Confiserie &amp; Café unter der Linde</div>
       <h1><span class="schrift">Ein Stück</span>vom Lindengarten.</h1>
-      <p class="text">Torten, die wir für Ihren Tag von Hand beschriften, Pralinés mit Pistazie und Aprikose, Brot ab dem frühen Morgen und ein Zmorge auf der Etagere – in der Marktgasse von Bischofszell.</p>
+      <p class="text">Torten, die wir für Ihren Tag von Hand aufschreiben, Pralinés mit Pistazie und Aprikose, frühes Brot und ein Zmorge auf der Etagere – in der Marktgasse von Bischofszell.</p>
       <ul class="eck">
         <li><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span id="jetzt"><span class="lampe"></span>Mo–Fr 6:45–18:30 · Sa 7:00–16:00 · So 8:00–12:00</span></li>
         <li><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><a href="#besuch">Marktgasse 9, 9220 Bischofszell</a></li>
@@ -287,7 +286,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
     <div>
       <div class="ueber ein">Tortenatelier</div>
       <h2 class="h2 ein">Ihre Torte, <span class="schrift">Ihre Worte</span></h2>
-      <p class="text ein">Wählen Sie Grösse und Füllung – wir schreiben Ihren Gruss von Hand in Crème auf die Torte. Bitte zwei Tage im Voraus bestellen.</p>
+      <p class="text ein">Wählen Sie Grösse und Füllung – wir schreiben Ihren Gruss von Hand mit Crème darauf. Bestellung bis zwei Tage vorher.</p>
       <div class="wahl ein">
         <span class="lbl">Für wie viele Personen?</span>
         <div class="chips" id="personen"></div>
@@ -306,20 +305,20 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
   <div class="wrap etagere">
     <div class="etBild ein" id="etBild">
       <img src="img/linde_etagere.webp" alt="Zmorge-Etagere" width="900" height="1117">
-      <div class="zone" data-z="0" style="top:25%;height:16%"></div>
-      <div class="zone" data-z="1" style="top:42%;height:19%"></div>
-      <div class="zone" data-z="2" style="top:61%;height:24%"></div>
+      <div class="zone" data-z="0" style="top:16%;height:18%"></div>
+      <div class="zone" data-z="1" style="top:34%;height:18%"></div>
+      <div class="zone" data-z="2" style="top:52%;height:20%"></div>
     </div>
     <div>
       <div class="ueber ein">Samstag &amp; Sonntag</div>
       <h2 class="h2 ein">Zmorge <span class="schrift">auf der Etagere</span></h2>
-      <p class="text ein">Drei Etagen, ein Kännchen Kaffee oder Tee und frisch gepresster Orangensaft – serviert an Ihren Tisch, im Winter drinnen, im Sommer im Garten.</p>
+      <p class="text ein">Drei Etagen, ein Kännchen Kaffee oder Tee und frisch gepresster Orangensaft – serviert an Ihren Tisch, im Winter drinnen, im Sommer unter der Linde.</p>
       <ul class="etagen ein" id="etagen">
         <li><button type="button" data-z="0" aria-pressed="false"><span class="nr">3</span><span><b>Oben: Süsses</b><small>Mini-Tartelettes, Pistazien-Macaron, ein Stück Tagestorte</small></span></button></li>
         <li><button type="button" data-z="1" aria-pressed="false"><span class="nr">2</span><span><b>Mitte: Aus dem Ofen</b><small>Buttergipfeli, Zopf, Nussbrötli, hausgemachte Aprikosen-Konfitüre</small></span></button></li>
         <li><button type="button" data-z="2" aria-pressed="false"><span class="nr">1</span><span><b>Unten: Herzhaft</b><small>Bergkäse, Schinken, Rührei mit Schnittlauch, Birchermüesli</small></span></button></li>
       </ul>
-      <div class="preis ein"><span>Etagere für 2: CHF 64.–</span><span>Einzeln: CHF 34.–</span><span>Kinder bis 10 Jahre: CHF 14.–</span></div>
+      <div class="preis ein"><span>Etagere für 2: CHF 64.–</span><span>Einzeln: CHF 34.–</span><span>Kinder bis 10: CHF 14.–</span></div>
     </div>
   </div>
 </section>
@@ -329,7 +328,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
     <div class="ueber ein">Aus der Backstube</div>
     <h2 class="h2 ein">Täglich <span class="schrift">frisch</span> in der Vitrine</h2>
     <div class="vitrine">
-      <article class="ware ein"><div class="b"><img src="img/linde_pralinen.webp" alt="Pralinés" width="800" height="600"></div><div class="t"><h3>Pralinés</h3><ul><li>Pistazien-Marzipan<b>100 g · 12.80</b></li><li>Aprikosen-Weissschoggi<b>100 g · 12.80</b></li><li>Geschenkschachtel 16 Stk.<b>29.–</b></li></ul></div></article>
+      <article class="ware ein"><div class="b"><img src="img/linde_pralinen.webp" alt="Pralinés" width="800" height="600"></div><div class="t"><h3>Pralinés</h3><ul><li>Pistazie-Marzipan<b>100 g · 12.80</b></li><li>Aprikose-Weissschoggi<b>100 g · 12.80</b></li><li>Geschenkschachtel 16 Stk.<b>29.–</b></li></ul></div></article>
       <article class="ware ein"><div class="b"><img src="img/linde_brot.webp" alt="Brot und Zopf" width="800" height="600"></div><div class="t"><h3>Brot</h3><ul><li>Butterzopf 500 g<b>7.20</b></li><li>Lindenbrot mit Dinkel<b>6.40</b></li><li>Buttergipfeli<b>1.70</b></li></ul></div></article>
       <article class="ware ein"><div class="b"><img src="img/linde_vitrine.webp" alt="Vitrine mit Patisserie" width="800" height="600"></div><div class="t"><h3>Patisserie</h3><ul><li>Pistazien-Törtli<b>6.50</b></li><li>Aprikosen-Tartelette<b>5.80</b></li><li>Cremeschnitte<b>5.20</b></li></ul></div></article>
       <article class="ware ein"><div class="b"><img src="img/linde_glace.webp" alt="Hausgemachte Glace" width="800" height="600"></div><div class="t"><h3>Glace</h3><ul><li>1 Kugel<b>3.80</b></li><li>Coupe Lindengarten<b>11.50</b></li><li>Pistazie, Aprikose, Vanille …</li></ul></div></article>
@@ -361,7 +360,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-bet
     <h2 class="h2 ein">Das sagen <span class="schrift">unsere Gäste</span></h2>
     <div class="stimmen">
       <figure class="stimme ein"><div class="sterne">★★★★★</div><p>«Die Geburtstagstorte mit Pistazie war ein Traum – und die Schrift genau so, wie ich sie mir gewünscht hatte.»</p><figcaption>Sandra K.</figcaption></figure>
-      <figure class="stimme ein"><div class="sterne">★★★★★</div><p>«Sonntags die Etagere im Garten, das ist für uns inzwischen Pflicht. Der Zopf ist der beste weit und breit.»</p><figcaption>Thomas &amp; Regula B.</figcaption></figure>
+      <figure class="stimme ein"><div class="sterne">★★★★★</div><p>«Sonntags die Etagere unter der Linde, das ist für uns inzwischen Pflicht. Der Zopf ist der beste weit und breit.»</p><figcaption>Thomas &amp; Regula B.</figcaption></figure>
       <figure class="stimme ein"><div class="sterne">★★★★★</div><p>«Für unseren Firmenapéro hat alles gepasst: pünktlich, schön angerichtet und sehr fein.»</p><figcaption>Michael W.</figcaption></figure>
     </div>
     <p class="fiktiv">Bewertungen, Namen und Angaben auf dieser Musterseite sind fiktiv.</p>
@@ -407,17 +406,17 @@ const TK=['So','Mo','Di','Mi','Do','Fr','Sa'],TL=['Sonntag','Montag','Dienstag',
 const u=h=>Math.floor(h)+':'+String(Math.round((h%1)*60)).padStart(2,'0');
 const now=new Date(),d0=now.getDay(),h=now.getHours()+now.getMinutes()/60;
 (function(){const z=Z[d0];let t,zu=false;if(h>=z[0]&&h<z[1])t='Jetzt offen bis '+u(z[1]);else if(h<z[0]){zu=true;t='Öffnet heute um '+u(z[0])}else{zu=true;const n=(d0+1)%7;t='Geschlossen · morgen ab '+u(Z[n][0])}
- document.getElementById('jetzt').innerHTML='<span class="lampe'+(zu?' zu':'')+'"></span>'+t+''})();
+ document.getElementById('jetzt').innerHTML='<span class="lampe'+(zu?' zu':'')+'"></span>'+t+' <span style="color:var(--kakao2)">· sieben Tage offen</span>'})();
 const zt=document.getElementById('zeiten');
 [1,2,3,4,5,6,0].forEach(d=>{const tr=document.createElement('tr');if(d===d0)tr.className='heute';tr.innerHTML='<td>'+TL[d]+(d===d0?' (heute)':'')+'</td><td>'+u(Z[d][0])+' – '+u(Z[d][1])+'</td>';zt.appendChild(tr)});
 
 /* Woche: Spezialität pro Tag */
-const S={1:['Montag','Birnbrot','Mit Dörrbirnen und Gewürzen – zum Wochenstart, noch warm um 7 Uhr.'],
+const S={1:['Montag','Butterzopf-Tag','Der Zopf vom Wochenende in klein: Zöpfli zu 250 g, noch warm um 7 Uhr.'],
 2:['Dienstag','Nussgipfel','Mit Haselnüssen aus dem Piemont, gefüllt bis in die Spitzen.'],
 3:['Mittwoch','Linzer Schnitte','Mit Johannisbeer-Konfitüre und viel Zimt – am Stück oder geschnitten.'],
 4:['Donnerstag','Quiche-Mittag','Lauch-Speck oder Spinat-Feta, mit Salat für CHF 16.50.'],
-5:['Freitag','Engadiner Nusstorte','Mit Baumnüssen und Caramel, im Mürbeteig gebacken.'],
-6:['Samstag','Zmorge-Etagere','Ab 8 Uhr, bitte reservieren.'],
+5:['Freitag','Pistazien-Törtli','Unser Lieblingsgebäck mit grüner Crème und Himbeere.'],
+6:['Samstag','Zmorge-Etagere','Ab 8 Uhr, bitte reservieren – im Garten unter der Linde.'],
 0:['Sonntag','Sonntagszopf','Grosser Zopf zu 750 g, nur bis Mittag.']};
 const W=document.getElementById('wocheTage'),TI=document.getElementById('tagInfo');
 [1,2,3,4,5,6,0].forEach(d=>{const b=document.createElement('button');b.type='button';b.className='tag';b.dataset.d=d;b.setAttribute('aria-pressed',d===d0);
@@ -443,7 +442,7 @@ else setTimeout(aufschneiden,650);
 
 /* Tortenatelier */
 const P=[[6,18,42],[8,20,54],[10,22,66],[12,24,78],[16,26,102],[20,28,126]];
-const F=[['Pistazien-Himbeer','#A3203A','#7C9A4E'],['Schoggi-Haselnuss','#4A2C22','#6B4532'],['Aprikosen-Vanille','#B5531F','#E39A64'],['Zitrone-Mohn','#6E5E0C','#D8C24A']];
+const F=[['Pistazie-Himbeere','#A3203A','#7C9A4E'],['Schoggi-Haselnuss','#4A2C22','#6B4532'],['Aprikose-Vanille','#B5531F','#E39A64'],['Zitrone-Mohn','#6E5E0C','#D8C24A']];
 let pi=1,fi=0;const pE=document.getElementById('personen'),fE=document.getElementById('fuellung'),au=document.getElementById('aufschrift'),gr=document.getElementById('gruss');
 P.forEach((p,i)=>{const c=document.createElement('button');c.type='button';c.className='chip';c.textContent=p[0]+' Pers.';c.onclick=()=>{pi=i;torte()};pE.appendChild(c)});
 F.forEach((f,i)=>{const c=document.createElement('button');c.type='button';c.className='chip';c.innerHTML='<i style="background:'+f[2]+'"></i>'+f[0];c.onclick=()=>{fi=i;torte()};fE.appendChild(c)});
@@ -464,5 +463,5 @@ else{const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting||e
  addEventListener('scroll',()=>E.forEach(e=>{if(!e.classList.contains('da')&&e.getBoundingClientRect().top<innerHeight)e.classList.add('da')}),{passive:true})}
 })();
 </script>
-<style id="jr-back-css">#jr-back{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:2147483000;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;border-radius:999px;background:rgba(22,22,24,.86);color:#fff!important;font:600 14px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;letter-spacing:.01em;text-decoration:none!important;box-shadow:0 6px 18px -6px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.14) inset;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:background-color .2s ease,transform .2s ease}@media (hover:hover){#jr-back:hover{background:#000;transform:translateY(-1px)}}#jr-back:focus-visible{background:#000;transform:translateY(-1px)}#jr-back:focus-visible{outline:2px solid #fff;outline-offset:2px}#jr-back span[aria-hidden]{font-size:16px;line-height:1}@media (max-width:600px){#jr-back{left:12px;bottom:calc(16px + env(safe-area-inset-bottom,0px));padding:8px 13px 8px 10px;font-size:13px}}@media print{#jr-back{display:none}}</style><a id="jr-back" href="https://webstudio-mirku.ch/#muster" lang="de"><span aria-hidden="true">←</span><b style="font-weight:600" data-jrb>Zurück zu Julia &amp; Robin Mirku</b></a><script>(function(){var b=document.querySelector("#jr-back [data-jrb]");if(!b)return;var T={de:"Zurück zu Julia & Robin Mirku",en:"Back to Julia & Robin Mirku",fr:"Retour à Julia & Robin Mirku"};function s(){var l=(document.documentElement.lang||"de").slice(0,2).toLowerCase();b.textContent=T[l]||T.de;var a=b.parentNode;a.lang=T[l]?l:"de";a.href="https://webstudio-mirku.ch/"+(l==="en"||l==="fr"?"?lang="+l:"")+"#muster";}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script></body>
+<style id="jr-back-css">#jr-back{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:2147483000;display:inline-flex;align-items:center;gap:7px;padding:9px 15px 9px 12px;border-radius:999px;background:rgba(22,22,24,.86);color:#fff!important;font:600 14px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;letter-spacing:.01em;text-decoration:none!important;box-shadow:0 6px 18px -6px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.14) inset;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:background-color .2s ease,transform .2s ease}#jr-back:hover,#jr-back:focus-visible{background:#000;transform:translateY(-1px)}#jr-back:focus-visible{outline:2px solid #fff;outline-offset:2px}#jr-back span[aria-hidden]{font-size:16px;line-height:1}@media (max-width:600px){#jr-back{left:12px;bottom:calc(16px + env(safe-area-inset-bottom,0px));padding:8px 13px 8px 10px;font-size:13px}}@media print{#jr-back{display:none}}</style><a id="jr-back" href="https://webstudio-mirku.ch/#muster" lang="de"><span aria-hidden="true">←</span><b style="font-weight:600" data-jrb>Zurück zu Julia &amp; Robin Mirku</b></a><script>(function(){var b=document.querySelector("#jr-back [data-jrb]");if(!b)return;var T={de:"Zurück zu Julia & Robin Mirku",en:"Back to Julia & Robin Mirku",fr:"Retour à Julia & Robin Mirku"};function s(){var l=(document.documentElement.lang||"de").slice(0,2).toLowerCase();b.textContent=T[l]||T.de;var a=b.parentNode;a.lang=T[l]?l:"de";a.href="https://webstudio-mirku.ch/"+(l==="en"||l==="fr"?"?lang="+l:"")+"#muster";}s();new MutationObserver(s).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});})();</script></body>
 </html>
